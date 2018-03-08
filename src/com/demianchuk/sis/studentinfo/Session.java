@@ -30,6 +30,10 @@ abstract public class Session implements Comparable <Session>, Iterable<Student>
         this.numberOfCredits = numberOfCredits;
     }
     
+    public int getNumberOfCredits() {
+        return numberOfCredits;
+    }
+    
     public String getDepartment() {
         return course.getDepartment();
     }

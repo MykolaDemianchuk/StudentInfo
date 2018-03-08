@@ -26,6 +26,7 @@ public class StudentUI {
     
     public void run() throws IOException {
         String line;
+        
         do {
             write(MENU);
             line = reader.readLine();
@@ -41,6 +42,7 @@ public class StudentUI {
     private void addStudent() throws IOException {
         write(NAME_PROMPT);
         String name = reader.readLine();
+        
         students.add(new Student(name));
         writeln(ADDED_MESSAGE);
     }
@@ -48,7 +50,6 @@ public class StudentUI {
     private void write(String line) throws IOException {
         writer.write(line, 0, line.length());
         writer.flush();
-
     }
     
     private void writeln(String line) throws IOException {

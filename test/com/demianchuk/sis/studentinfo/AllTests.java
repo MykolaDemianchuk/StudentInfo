@@ -18,6 +18,7 @@ public class AllTests {
         suite.addTestSuite(CourseTest.class);
         suite.addTestSuite(AccountTest.class);
         suite.addTestSuite(StudentUITest.class);
+        suite.addTestSuite(CourseCatalogTest.class);
         return suite;
     }   
 }
