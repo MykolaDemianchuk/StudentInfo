@@ -22,13 +22,13 @@ public class StudentUITest extends TestCase {
         System.setIn(inputStream);
         System.setOut(new PrintStream(outputStream));
         try {
-            StudentUI ui = new StudentUI();
-            ui.run();
-            
+//            StudentUI ui = new StudentUI();
+//            ui.run();
+            StudentUI.main(new String[] {});
             assertEquals(
                     expectedOutput.toString(),
                     outputStream.toString());
-            assertStudents(ui.getAddedStudents());
+            //assertStudents(ui.getAddedStudents());
         } finally {
             System.setIn(consoleIn);
             System.setOut(consoleOut);
