@@ -26,7 +26,6 @@ public class StudentUI {
     
     public void run() throws IOException {
         String line;
-        
         do {
             write(MENU);
             line = reader.readLine();
