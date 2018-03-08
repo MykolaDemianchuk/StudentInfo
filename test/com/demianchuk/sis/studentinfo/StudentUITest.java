@@ -13,22 +13,22 @@ public class StudentUITest extends TestCase {
         StringBuffer input = new StringBuffer();
         setup(expectedOutput, input);
         byte[] buffer = input.toString().getBytes();
-
+        
         InputStream inputStream = new ByteArrayInputStream(buffer);
         OutputStream outputStream = new ByteArrayOutputStream();
-
+        
         InputStream consoleIn = System.in;
         PrintStream consoleOut = System.out;
         System.setIn(inputStream);
         System.setOut(new PrintStream(outputStream));
+        
         try {
-//            StudentUI ui = new StudentUI();
-//            ui.run();
-            StudentUI.main(new String[] {});
+            StudentUI ui = new StudentUI();
+            ui.run();
             assertEquals(
                     expectedOutput.toString(),
                     outputStream.toString());
-            //assertStudents(ui.getAddedStudents());
+            assertStudents(ui.getAddedStudents());
         } finally {
             System.setIn(consoleIn);
             System.setOut(consoleOut);
@@ -51,7 +51,6 @@ public class StudentUITest extends TestCase {
         expectedOutput.append(StudentUI.NAME_PROMPT);
         input.append(line(name));
         expectedOutput.append(line(StudentUI.ADDED_MESSAGE));
-        input.append(line(StudentUI.ADD_OPTION));
         expectedOutput.append(StudentUI.MENU);
         input.append(line(StudentUI.QUIT_OPTION));
     }
