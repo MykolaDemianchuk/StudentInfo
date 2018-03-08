@@ -1,8 +1,8 @@
 package com.demianchuk.sis.studentinfo;
  
-import java.util.Objects;
+import java.io.*;
 
-public class Course {
+public class Course implements Serializable {
     private String department;
     private String number;
 

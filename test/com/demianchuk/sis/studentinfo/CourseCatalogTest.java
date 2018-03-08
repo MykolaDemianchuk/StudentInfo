@@ -29,7 +29,7 @@ public class CourseCatalogTest extends TestCase {
         catalog.add(session2);
     }
     
-    public void testStoreAndLoad() throws IOException {
+    public void testStoreAndLoad() throws Exception {
         final String filename = "CourseCatalogTest.txt";
         catalog.store(filename);
         catalog.clearAll();
