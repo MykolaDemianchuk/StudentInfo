@@ -1,12 +1,16 @@
 package com.demianchuk.sis.studentinfo;
 
+import java.io.*;
 import java.util.*;
 import java.net.*;
 /**
  *
  * @author Nick
  */
-abstract public class Session implements Comparable <Session>, Iterable<Student> {
+abstract public class Session 
+        implements Comparable <Session>, 
+                   Iterable<Student>,
+                   Serializable {
     private Course course;
     private List<Student> students = new ArrayList<Student>();
     private Date startDate;
