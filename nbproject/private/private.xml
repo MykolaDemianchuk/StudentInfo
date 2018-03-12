@@ -3,17 +3,30 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/CourseSession.java</file>
             <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/AllTests.java</file>
-            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/SessionTest.java</file>
-            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/summer/SummerCourseSessionTest.java</file>
-            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/AllTests.java</file>
-            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/util/PasswordGeneratorTest.java</file>
-            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/ScorerTest.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/report/ReportCard.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/CourseCatalog.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/GradingStrategy.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/report/CourseReport.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/BasicGradingStrategy.java</file>
             <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/StudentNameFormatException.java</file>
-            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/AccountTest.java</file>
-            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/StudentDirectoryTest.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/report/RosterReporter.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/Session.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/CourseTest.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/CourseCatalogTest.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/Student.java</file>
             <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/StudentUITest.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/report/Entry.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/report/ReportConstant.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/Account.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/SessionTest.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/CourseSessionTest.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/StudentTest.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/StudentDirectory.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/test/com/demianchuk/sis/studentinfo/StudentDirectoryTest.java</file>
             <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/StudentUI.java</file>
+            <file>file:/C:/Users/Nick/Documents/NetBeansProjects/StudentInfo/src/com/demianchuk/sis/studentinfo/Course.java</file>
         </group>
     </open-files>
 </project-private>

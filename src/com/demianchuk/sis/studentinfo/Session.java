@@ -12,7 +12,7 @@ abstract public class Session
                    Iterable<Student>,
                    Serializable {
     private Course course;
-    private List<Student> students = new ArrayList<Student>();
+    private transient List<Student> students = new ArrayList<Student>();
     private Date startDate;
     private int numberOfCredits;
     private URL url;
@@ -117,4 +117,22 @@ abstract public class Session
     private void log(Exception e){
         e.printStackTrace();
     }
+    
+    private void writeObject(ObjectOutputStream output) throws IOException {
+        output.defaultWriteObject();
+        output.writeInt(students.size());
+        for(Student student : students)
+            output.writeObject(student.getLastName());
+    }
+    
+    private void readObject(ObjectInputStream input) throws Exception {
+        input.defaultReadObject();
+        students = new ArrayList<>();
+        int size = input.readInt();
+        for (int i = 0; i < size; i++) {
+            String lastName = (String)input.readObject();
+            students.add(Student.findByLastName(lastName));
+        }
+    }
+    
 }

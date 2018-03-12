@@ -9,7 +9,7 @@ public class Student {
             "Student '%s' contains more than %d parts";
     static final int MAX_NAME_PARTS = 3;
     static final Logger logger = Logger.getLogger(Student.class.getName());
-        
+
     public enum Grade {
         A(4),
         B(3),
@@ -51,6 +51,7 @@ public class Student {
     private GradingStrategy gradingStrategy = new BasicGradingStrategy();
     private List<Integer> charges = new ArrayList<Integer>();
     private int settings = 0x0;
+    private String id;
     
     public Student(String fullName){
         this.name = fullName;
@@ -64,7 +65,19 @@ public class Student {
         }
         setName(nameParts);
     }
-
+    
+    public static Student findByLastName(String lastName) {
+        return new Student(lastName);
+    }
+    
+    public String getId() {
+        return id;
+    }
+    
+    public void setId(String id) {
+        this.id = id;
+    }
+    
     public String getName() {
         return name;
     }   
