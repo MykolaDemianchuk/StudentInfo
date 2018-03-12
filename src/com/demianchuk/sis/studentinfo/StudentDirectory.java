@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.demianchuk.sis.studentinfo;
 
-/**
- *
- * @author Nick
- */
+import java.util.*;
+
 public class StudentDirectory {
+    private Map<String, Student> students = new HashMap<>();
     
+    public void add(Student student) {
+        students.put(student.getId(), student);
+    }
+    
+    public Student findById(String id) {
+        return students.get(id);
+    }
 }

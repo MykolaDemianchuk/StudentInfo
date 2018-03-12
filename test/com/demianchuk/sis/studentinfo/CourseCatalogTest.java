@@ -23,7 +23,8 @@ public class CourseCatalogTest extends TestCase {
         
         session2 = CourseSession.create(course2,
                 DateUtil.createDate(1, 17, 2005));
-        session1.setNumberOfCredits(5);
+        session2.setNumberOfCredits(5);
+        session2.enroll(new Student("a"));
         
         catalog.add(session1);
         catalog.add(session2);
@@ -35,10 +36,16 @@ public class CourseCatalogTest extends TestCase {
         catalog.clearAll();
         assertEquals(0, catalog.getSessions().size());
         catalog.load(filename);
+        
         List<Session> sessions = catalog.getSessions();
         assertEquals(2, sessions.size());
         assertSession(session1, sessions.get(0));
         assertSession(session2, sessions.get(1));
+        
+        Session session = sessions.get(1);
+        assertSession(session2, session);
+        Student student = session.getAllStudents().get(0);
+        assertEquals("a", student.getLastName());
     }
     
     private void assertSession(Session expected, Session retrieved) {
